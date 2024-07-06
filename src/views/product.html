@@ -1,0 +1,8 @@
+<!-- menyatakan template  -->
+{{ template "layout" .}}
+<!-- pertama mendefenisikan sebagai main  -->
+{{ define "main"}}
+   <div class="text">
+    <p>  Product with ID => {{ .content}}</p>
+   </div>
+{{ end }}

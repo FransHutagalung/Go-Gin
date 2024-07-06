@@ -1,0 +1,24 @@
+<!-- menyatakan template  -->
+{{ template "layout" .}}
+<!-- pertama kita akan mendefenisikan main disini -->
+{{ define "main"}}
+<!-- range dari data2 -->
+    {{ range .}}
+    <div class="text">
+        <p> {{.Id}}</p>
+        <h3>{{.Nama}}</h3>
+        <h5>{{.Harga}}</h5>
+        <!-- buat ekspresi if -->
+        <h5>{{.Stock}} ==> 
+        <!-- {{ if lt .Stock 6 }}
+             Stock hampir habis 
+             lt artinya lebih sedikit --> 
+        <!-- {{ else if gt .Stock 50}}
+             Stock Banyak -->
+             <!-- gt artinya lebih banyak -->
+        <!-- {{ end }} --> 
+        {{ .StockStatus}}
+       </h5>
+    </div>
+    {{ end }}
+{{ end }}

@@ -1,0 +1,19 @@
+{{ template  "layout" .}}
+{{ define  "main"}}
+   <div class="box-with-shadow">
+    <form action="/process" method="post">
+       <!-- akan dikirim ke rooting proces -->
+      <div class="box-with-shadow">
+        <label for="name">Nama</label>
+        <input type="text" name="name" id="" required  placeholder="ISI NAMA KAMU">
+      </div>
+      <div class="box-with-shadow">
+        <label for="pesan">Pesan</label>
+        <input type="text" name="pesan" id="" required  placeholder="ISI PESAN KAMU">
+      </div>
+      <div class="box-with-shadow">
+        <input type="submit" value="kirim">
+      </div>
+    </form>
+   </div>
+{{ end }}

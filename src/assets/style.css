@@ -1,0 +1,23 @@
+body{
+  margin: 2;
+  padding: 2;
+  box-sizing: border-box;
+  background-color: blue;
+}
+.header{
+  height: 200px;
+  width: 500px;
+  background-color: red;
+}
+.footer{
+  height: 200px;
+  width: 500px;
+  background-color: aqua;
+  border-radius: 4px;
+ 
+}
+.box-with-shadow{
+  width: 600px;
+  height: 200px;
+  box-shadow:   10px 5px 5px black;
+}
